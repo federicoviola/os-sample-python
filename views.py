@@ -1,4 +1,4 @@
-from wsgi import application as app
+from fedeapp import app
 
 @app.route('/')
 def index():
