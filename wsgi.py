@@ -1,9 +1,4 @@
-from flask import Flask
-application = Flask(__name__)
-
-@application.route("/")
-def hello():
-    return "Good bye World!"
+from fedeapp import app as application
 
 if __name__ == "__main__":
-    application.run()
+    application.run(debug=True)
